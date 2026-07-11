@@ -1,0 +1,9 @@
+{
+  "_comment": "Your holdings. 'id' must match a symbol in symbols.json. 'shares' and 'avgCost' in the position's own currency. These are EXAMPLE rows — replace with your real positions (or leave empty []). Nothing here is shared or sent anywhere; it lives only in your repo.",
+  "positions": [
+    { "id": "ACN",  "shares": 15,  "avgCost": 302.0 },
+    { "id": "NVDA", "shares": 40,  "avgCost": 118.5 },
+    { "id": "LQQ",  "shares": 3,   "avgCost": 1780.0 },
+    { "id": "4GLD", "shares": 25,  "avgCost": 82.0 }
+  ]
+}
