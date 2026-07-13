@@ -1,0 +1,47 @@
+name: Update market data
+
+on:
+  schedule:
+    - cron: "35 2 * * 2-6"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install deps
+        run: pip install yfinance
+
+      - name: Fetch prices + fundamentals
+        run: python fetch_data.py
+
+      - name: Fetch news
+        env:
+          FINNHUB_KEY: ${{ secrets.FINNHUB_KEY }}
+        run: python fetch_news.py
+
+      - name: Fetch economic calendar
+        env:
+          FRED_KEY: ${{ secrets.FRED_KEY }}
+        run: python fetch_econ.py
+
+      - name: Commit updated data
+        run: |
+          git config user.name  "market-bot"
+          git config user.email "actions@users.noreply.github.com"
+          git add data/
+          if git diff --staged --quiet; then
+            echo "No changes."
+          else
+            git commit -m "data: $(date -u +'%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
