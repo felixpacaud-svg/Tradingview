@@ -1,0 +1,29 @@
+{
+  "symbols": [
+    { "id": "SPX",     "name": "S&P 500",            "yf": "^GSPC",     "kind": "index",     "group": "Indices" },
+    { "id": "NDX",     "name": "NASDAQ 100",         "yf": "^NDX",      "kind": "index",     "group": "Indices" },
+    { "id": "DJI",     "name": "Dow Jones",          "yf": "^DJI",      "kind": "index",     "group": "Indices" },
+    { "id": "IWM",     "name": "Russell 2000 (IWM)", "yf": "IWM",       "kind": "etf",       "group": "Indices" },
+    { "id": "STOXX50", "name": "Euro Stoxx 50",      "yf": "^STOXX50E", "kind": "index",     "group": "Indices" },
+    { "id": "SXXP",    "name": "STOXX Europe 600",   "yf": "^STOXX",    "kind": "index",     "group": "Indices" },
+    { "id": "VIX",     "name": "VIX Volatility",     "yf": "^VIX",      "kind": "index",     "group": "Indices" },
+    { "id": "DXY",     "name": "US Dollar Index",    "yf": "DX-Y.NYB",  "kind": "index",     "group": "Indices" },
+    { "id": "EURUSD",  "name": "EUR / USD",          "yf": "EURUSD=X",  "kind": "fx",        "group": "FX" },
+    { "id": "CHFEUR",  "name": "CHF / EUR",          "yf": "CHFEUR=X",  "kind": "fx",        "group": "FX" },
+    { "id": "BTC",     "name": "Bitcoin",            "yf": "BTC-USD",   "kind": "crypto",    "group": "Crypto" },
+    { "id": "WTI",     "name": "WTI Crude Oil",      "yf": "CL=F",      "kind": "commodity", "group": "Commodities" },
+    { "id": "BRENT",   "name": "Brent Crude (UKOIL)","yf": "BZ=F",      "kind": "commodity", "group": "Commodities" },
+    { "id": "XAUUSD",  "name": "Gold Spot",          "yf": "GC=F",      "kind": "commodity", "group": "Commodities" },
+    { "id": "4GLD",    "name": "Xetra Gold (4GLD)",  "yf": "4GLD.DE",   "kind": "etf",       "group": "Commodities" },
+    { "id": "ACN",     "name": "Accenture",          "yf": "ACN",       "kind": "equity",    "group": "Stocks" },
+    { "id": "SU",      "name": "Schneider Electric", "yf": "SU.PA",     "kind": "equity",    "group": "Stocks" },
+    { "id": "NVDA",    "name": "NVIDIA",             "yf": "NVDA",      "kind": "equity",    "group": "Stocks" },
+    { "id": "MSFT",    "name": "Microsoft",          "yf": "MSFT",      "kind": "equity",    "group": "Stocks" },
+    { "id": "AMZN",    "name": "Amazon",             "yf": "AMZN",      "kind": "equity",    "group": "Stocks" },
+    { "id": "GOOGL",   "name": "Alphabet",           "yf": "GOOGL",     "kind": "equity",    "group": "Stocks" },
+    { "id": "META",    "name": "Meta Platforms",     "yf": "META",      "kind": "equity",    "group": "Stocks" },
+    { "id": "TSLA",    "name": "Tesla",              "yf": "TSLA",      "kind": "equity",    "group": "Stocks" },
+    { "id": "AAPL",    "name": "Apple",              "yf": "AAPL",      "kind": "equity",    "group": "Stocks" },
+    { "id": "LQQ",     "name": "Amundi NASDAQ-100 2x","yf": "LQQ.PA",   "kind": "etf",       "group": "ETFs", "leveraged": true }
+  ]
+}
